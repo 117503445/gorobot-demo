@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/go-vgo/robotgo"
 )
 
@@ -27,4 +29,8 @@ func main() {
 
 	robotgo.Toggle("left")
 	robotgo.Toggle("left", "up")
+
+	fmt.Println("Press enter to exit")
+	// python input() to prevent the program from exiting immediately
+	fmt.Scanln()
 }

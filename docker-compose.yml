@@ -5,6 +5,7 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
         - ./:/workspace
+        - /var/run/docker.sock:/var/run/docker.sock
         - gorobot-demo-dev-vsc:/root/.vscode-server
     stdin_open: true
     tty: true
